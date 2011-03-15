@@ -1,0 +1,4 @@
+source "http://rubygems.org"
+
+gem "em-websocket", :git=>"git://github.com/DavidEGrayson/em-websocket.git"
+gem "eventmachine"

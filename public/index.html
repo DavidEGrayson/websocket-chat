@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="main.css"/>
+  <title>My Chat Room</title>
+</head>
+<body onload="start()" class="not_connected">
+
+  <div id="page">
+
+    <div id="main">
+    </div>
+
+    <div id="panel">
+      <div id="chatView"></div>
+      <div>
+        <input id="chat_input" type="text" value=""
+          onKeyPress="if(event.which==13){sendChat();return false}return true"/>
+      </div>
+
+      <div id="server_status">&nbsp;</div>
+      <div id="chat_room_info">
+        <div id="chat_user_list_title">Users in room:</div>
+        <div id="chat_user_list"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

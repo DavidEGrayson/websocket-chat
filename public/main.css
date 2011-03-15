@@ -1,0 +1,50 @@
+
+#chatView
+{
+    border:1px solid black;
+    width:200px;
+    height:200px;
+    overflow-y:scroll;
+}
+
+.not_connected #chatView
+{
+		background-color: #DDDDDD;
+}
+
+.connected #chatView
+{
+		background-color: #FFFFFF;
+}
+
+#chat_input
+{
+    width: 200px;
+}
+
+.status_message
+{
+    font-style: italic;
+}
+
+.not_connected #chat_room_info
+{
+    display: none;
+}
+
+#chat_user_list_title
+{
+    margin-top: 1em;
+}
+
+#page
+{
+    position: relative;
+    width: 100%;
+}
+
+#main
+{
+    position: absolute;
+    margin-left: 210px;
+}
