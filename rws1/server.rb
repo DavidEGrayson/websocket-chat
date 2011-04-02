@@ -1,3 +1,6 @@
+require "rubygems"
+require "bundler"
+Bundler.setup
 require 'em-websocket'
 
 class Client
@@ -88,4 +91,4 @@ class ChatRoom
 end
 
 chatroom = ChatRoom.new
-chatroom.start(:host=>"", :port=>8080)
+chatroom.start(host: "", port: 8080)
