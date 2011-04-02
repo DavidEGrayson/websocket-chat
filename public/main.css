@@ -1,5 +1,5 @@
 
-#chatView
+#chat_messages
 {
     border:1px solid black;
     width: 100%;
@@ -7,12 +7,12 @@
     overflow-y:scroll;
 }
 
-.not_connected #chatView
+.not_connected #chat_messages
 {
 		background-color: #DDDDDD;
 }
 
-.connected #chatView
+.connected #chat_messages
 {
 		background-color: #FFFFFF;
 }
@@ -48,8 +48,3 @@
     width: 100%;
 }
 
-#main
-{
-    position: absolute;
-    margin-left: 210px;
-}

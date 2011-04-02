@@ -21,6 +21,12 @@ function start()
 		ws.onclose = onClose;
 
     sendKeepAlives();
+    updateElementSizes();
+}
+
+function updateElementSizes()
+{
+		chatView.style.height = 700.toString()+"px"; //document.body.clientHeight - 200;
 }
 
 function sendKeepAlives()
@@ -172,7 +178,7 @@ userList.remove = function(name)
     }
 }
 		
-var chatView = document.getElementById("chatView");
+var chatView = document.getElementById("chat_messages");
 chatView.add = function(str)
 {
     var scrollIsAtBottom = (this.scrollTop >= this.scrollHeight - this.clientHeight - 10);
