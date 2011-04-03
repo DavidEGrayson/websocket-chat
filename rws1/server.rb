@@ -1,10 +1,10 @@
 require "rubygems"
 require "bundler"
 Bundler.setup
-require 'em-websocket'
+require "em-websocket"
 
 class Client
-  attr_reader :websocket
+  attr_accessor :websocket
   attr_accessor :name
 
   def initialize(websocket_arg)
@@ -39,8 +39,7 @@ class ChatRoom
   end
 
   def remove_client(websocket)
-    client = @clients[websocket]
-    @clients.delete(websocket)
+    client = @clients.delete(websocket)
     send_all "l" + client.name      # Alert other clients.
   end
 
