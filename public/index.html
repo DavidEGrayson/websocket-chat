@@ -8,14 +8,17 @@
 
   <div id="page">
 
-    <div id="chat_room">
-      <div id="chat_messages"></div>
+    <div id="main">
+    </div>
+
+    <div id="panel">
+      <div id="chatView"></div>
       <div>
         <input id="chat_input" type="text" value=""
           onKeyPress="if(event.which==13){sendChat();return false}return true"/>
       </div>
 
-      <div id="server_status"></div>
+      <div id="server_status">&nbsp;</div>
       <div id="chat_room_info">
         <div id="chat_user_list_title">Users in room:</div>
         <div id="chat_user_list"></div>

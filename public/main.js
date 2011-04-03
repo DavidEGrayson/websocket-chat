@@ -178,7 +178,7 @@ userList.remove = function(name)
     }
 }
 		
-var chatView = document.getElementById("chat_messages");
+var chatView = document.getElementById("chatView");
 chatView.add = function(str)
 {
     var scrollIsAtBottom = (this.scrollTop >= this.scrollHeight - this.clientHeight - 10);
