@@ -26,7 +26,7 @@ function start()
 
 function updateElementSizes()
 {
-		chatView.style.height = 700.toString()+"px"; //document.body.clientHeight - 200;
+		chatView.style.height = window.innerHeight-100+"px";
 }
 
 function sendKeepAlives()
