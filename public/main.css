@@ -27,14 +27,9 @@
     font-style: italic;
 }
 
-.not_connected #chat_room_info
+.not_connected #chat_user_list
 {
     display: none;
-}
-
-#chat_room_info
-{
-		height: 100px
 }
 
 #page
@@ -49,5 +44,3 @@
     display: inline;
     padding-right: 0.5em;
 }
-
-
