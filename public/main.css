@@ -32,12 +32,6 @@
     display: none;
 }
 
-#page
-{
-    position: relative;
-    width: 100%;
-}
-
 #chat_user_list div
 {
     float: left;

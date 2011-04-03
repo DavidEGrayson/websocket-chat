@@ -4,23 +4,17 @@
   <link rel="stylesheet" type="text/css" href="main.css"/>
   <title>Websocket Chat Room</title>
 </head>
-<body onload="start()" class="not_connected">
+<body onload="start()">
 
-  <div id="page">
+  <div id="chat" class="not_connected">
+    <div id="chat_view"></div>
+    <input id="chat_input" type="text" value=""
+      onKeyPress="if(event.which==13){sendChat();return false}return true"/>
 
-    <div id="panel">
-      <div id="chat_view"></div>
-      <div>
-        <input id="chat_input" type="text" value=""
-          onKeyPress="if(event.which==13){sendChat();return false}return true"/>
-      </div>
-
-      <div id="server_status"></div>
-      <div id="chat_user_list">
-        <div id="chat_user_list_title">Users in room:</div>
-      </div>
+    <div id="server_status"></div>
+    <div id="chat_user_list">
+      <div id="chat_user_list_title">Users in room:</div>
     </div>
-
   </div>
 
   <script src="main.js"></script>

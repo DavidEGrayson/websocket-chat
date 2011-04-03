@@ -100,8 +100,9 @@ function onMessage(evt)
 
 function updateServerStatus()
 {
-    document.body.className = connected ? "connected" : "not_connected";
-    serverStatus = document.getElementById("server_status");
+    var chat = document.getElementById("chat");
+    var serverStatus = document.getElementById("server_status");
+    chat.className = connected ? "connected" : "not_connected";
 		if (connected)
     {
         if (userName)
