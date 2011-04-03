@@ -37,14 +37,17 @@
 		height: 100px
 }
 
-#chat_user_list_title
-{
-    margin-top: 1em;
-}
-
 #page
 {
     position: relative;
     width: 100%;
 }
+
+#chat_user_list div
+{
+    float: left;
+    display: inline;
+    padding-right: 0.5em;
+}
+
 

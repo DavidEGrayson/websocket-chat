@@ -2,7 +2,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="main.css"/>
-  <title>My Chat Room</title>
+  <title>Websocket Chat Room</title>
 </head>
 <body onload="start()" class="not_connected">
 
@@ -15,10 +15,9 @@
           onKeyPress="if(event.which==13){sendChat();return false}return true"/>
       </div>
 
-      <div id="server_status">&nbsp;</div>
-      <div id="chat_room_info">
+      <div id="server_status"></div>
+      <div id="chat_user_list">
         <div id="chat_user_list_title">Users in room:</div>
-        <div id="chat_user_list"></div>
       </div>
     </div>
 

@@ -141,6 +141,7 @@ userList.add = function(name)
     // Create the element.
     var new_element = document.createElement('div');
 		new_element.setAttribute('id', "user_list_item_"+name)
+    new_element.className = 'user_list_item';
     new_element.appendChild(document.createTextNode(name)); 
 
     // Insert it in the correct place in the userList.names
