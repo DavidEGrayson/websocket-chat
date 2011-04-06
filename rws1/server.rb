@@ -2,6 +2,7 @@ require "rubygems"
 require "bundler"
 Bundler.setup
 require "em-websocket"
+require "ruby-debug"
 
 class Client
   attr_accessor :websocket
