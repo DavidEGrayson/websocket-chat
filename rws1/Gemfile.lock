@@ -1,17 +1,12 @@
-GIT
-  remote: git://github.com/DavidEGrayson/em-websocket.git
-  revision: 74b24de9e99115c15963f38e5d056464ad03d723
-  specs:
-    em-websocket (0.2.1)
-      addressable (>= 2.1.1)
-      eventmachine (>= 0.12.9)
-
 GEM
   remote: http://rubygems.org/
   specs:
-    addressable (2.2.4)
+    addressable (2.2.6)
     archive-tar-minitar (0.5.2)
-    columnize (0.3.2)
+    columnize (0.3.6)
+    em-websocket (0.3.6)
+      addressable (>= 2.1.1)
+      eventmachine (>= 0.12.9)
     eventmachine (0.12.10)
     linecache19 (0.5.12)
       ruby_core_source (>= 0.1.4)
@@ -30,6 +25,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  em-websocket!
+  em-websocket
   eventmachine
   ruby-debug19

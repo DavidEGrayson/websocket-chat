@@ -2,7 +2,7 @@ require "rubygems"
 require "bundler"
 Bundler.setup
 require "em-websocket"
-require "ruby-debug"
+# require "ruby-debug"
 
 class Client
   attr_accessor :websocket
@@ -32,7 +32,7 @@ class ChatRoom
 
   def add_client(websocket)
     client = Client.new(websocket)
-    client.name = assign_name(websocket.request["Query"]["name"])
+    client.name = assign_name(websocket.request["query"]["name"])
     send_all "e" + client.name                   # Alert other clients.
     @clients[websocket] = client
     websocket.send "n" + client.name             # Tell client what its assigned name is.
